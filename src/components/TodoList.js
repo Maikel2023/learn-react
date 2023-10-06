@@ -1,26 +1,34 @@
+//Todolist
+
+//We importeren React, useEffect, useState en Axios.
+//We definiëren een functionele component genaamd TodoList.
+//We gebruiken useState om een staat todos te beheren voor onze taken.
+//Met useEffect halen we gegevens op van een externe API (JSONPlaceholder) en slaan deze op in todos zodra de component wordt geladen.
+//In de weergave worden de opgehaalde taken weergegeven in een lijst.
+
+
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'; // If you are using Axios
+import axios from 'axios'; 
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
   
     useEffect(() => {
-      // Define a function to fetch data from the API
+      
       async function fetchTodos() {
         try {
-          // Use fetch or Axios to make the API call
-          const response = await axios.get('https://jsonplaceholder.typicode.com/todos'); // If using Axios
-          // const response = await fetch('https://jsonplaceholder.typicode.com/todos'); // If using fetch
+          
+          const response = await axios.get('https://jsonplaceholder.typicode.com/todos');
           const data = await response.data;
   
-          // Update the state with the fetched data
+  
           setTodos(data);
         } catch (error) {
           console.error('Error fetching data:', error);
         }
       }
   
-      // Call the fetchTodos function when the component mounts
+
       fetchTodos();
     }, []);
   

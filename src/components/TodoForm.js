@@ -1,15 +1,21 @@
+//TodoForm.js:
+
+//Deze component maakt een formulier om nieuwe taken toe te voegen.
+//Het ontvangt een functie addTodo.
+//Wanneer het formulier wordt ingediend, wordt addTodo aangeroepen om een nieuwe taak toe te voegen.
+
+
 import React, {useState} from 'react'
 
 export const TodoForm = ({addTodo}) => {
     const [value, setValue] = useState('');
 
     const handleSubmit = (e) => {
-      // prevent default action
         e.preventDefault();
         if (value) {
-          // add todo
+
           addTodo(value);
-          // clear form after submission
+
           setValue('');
         }
       };

@@ -1,3 +1,9 @@
+//TodoWrapperLocalStorage.js:
+
+//Deze component is vergelijkbaar met TodoWrapper, maar slaat de taken ook op in 
+//de lokale opslag van de browser, zodat de gegevens behouden blijven na paginavernieuwing.
+
+
 import React, {useState, useEffect} from 'react'
 import { TodoForm } from './TodoForm'
 import { v4 as uuidv4 } from 'uuid';

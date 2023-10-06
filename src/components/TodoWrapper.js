@@ -1,3 +1,10 @@
+//TodoWrapper.js:
+
+//Deze component bevat de hoofdlogica voor je takenlijst.
+//Het beheert een lijst met taken en heeft functies om taken toe te voegen, verwijderen, bewerken en markeren als voltooid.
+//Het toont de lijst met taken en kan taken bewerken met een speciaal bewerkingsformulier.
+
+
 import React, { useState } from "react";
 import { Todo } from "./Todo";
 import { TodoForm } from "./TodoForm";
@@ -44,7 +51,7 @@ export const TodoWrapper = () => {
     <div className="TodoWrapper">
       <h1>Todo List</h1>
       <TodoForm addTodo={addTodo} />
-      {/* display todos */}
+      {/* display van de todos */}
       {todos.map((todo) =>
         todo.isEditing ? (
           <EditTodoForm editTodo={editTask} task={todo} />
