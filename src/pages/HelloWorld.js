@@ -8,15 +8,15 @@ function HelloWorld() {
     history.push('/todos');
   };
 
-  const goToHome = () => {
-    history.push('/home');
+  const goToTodoList = () => {
+    history.push('/TodoList');
   };
 
   return (
     <div>
       <h1>Hello, World!</h1>
       <button onClick={goToTodos}>Go to Todos</button>
-      <button onClick={goToHome}>Go to Home</button>
+      <button onClick={goToTodoList}>Go to TodoList</button>
     </div>
   );
 }

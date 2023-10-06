@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import { TodoWrapper } from './components/TodoWrapper';
-import Home from './pages/Home';
+
 import Helloworld from './pages/HelloWorld';
+import TodoList from './components/TodoList';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
@@ -14,8 +15,8 @@ function App() {
         <Route exact path="/">
           <Helloworld /> {/* Render the Hello World component */}
         </Route>
-        <Route exact path="/home">
-          <Home />
+        <Route exact path="/TodoList">
+          <TodoList />
         </Route>
         <Route path="/todos">
           <TodoWrapper />
