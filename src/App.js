@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
 import { TodoWrapper } from './components/TodoWrapper';
-
 import Helloworld from './pages/HelloWorld';
 import TodoList from './components/TodoList';
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 

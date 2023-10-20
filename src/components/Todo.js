@@ -4,6 +4,7 @@
 //Het accepteert functies om taken te verwijderen, bewerken en markeren als voltooid.
 //Het heeft een klikbare tekst om de taak te markeren als voltooid, evenals pictogrammen om de taak te bewerken of te verwijderen.
 
+
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 function HelloWorld() {
   const history = useHistory();
@@ -15,6 +15,7 @@ function HelloWorld() {
   return (
     <div>
       <h1>Hello, World!</h1>
+      <Link to="/todos"><button>Go to todos</button></Link>
       <button onClick={goToTodos}>Go to Todos</button>
       <button onClick={goToTodoList}>Go to TodoList</button>
     </div>
